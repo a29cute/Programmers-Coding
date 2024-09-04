@@ -1,16 +1,6 @@
 class Solution {
     public int solution(int n, int k) {
-        int food = 12000;
-        int juice = 2000;
-        int result = 0;
-
-        if(n>=10){
-            result = (food*n)+(juice*k);
-            result -= juice*(n/10);
-        } else {
-            result = (food*n)+(juice*k);
-        }
-        
+        int result = (12000*n)+(2000*k)-(n/10*2000);
         return result;
     }
 }
